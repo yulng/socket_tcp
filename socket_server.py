@@ -17,11 +17,11 @@ while True:
         conn.settimeout(3)
         buf = conn.recv(1024)
         if buf == '1':
-            conn.send('welcome to tcp socket')
-            logging.info('server send a socket')
+            conn.send('send tcp socket')
+            logging.info('server send a socket to 5000')
         else:
-            conn.send('what the fuck')
-            logging.info('what the fuck')
+            conn.send('hello,everyone')
+            logging.info('hello,everyone')
     except socket.timeout:
         print('socket timeout')
         logging.error('socket timeout')
