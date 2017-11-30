@@ -2,7 +2,7 @@ FROM ubuntu
 
 MAINTAINER yulng yulng2000@163.com
 
-#ADD sources.list /etc/apt/sources.list 
+ADD sources.list /etc/apt/sources.list 
 #RUN apt-get update -y && apt-get install -y python-pip python-dev build-essential curl net-tools vim nginx vim
 
 
